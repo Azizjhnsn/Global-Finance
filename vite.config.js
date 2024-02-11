@@ -8,3 +8,5 @@ export default defineConfig({
     port:5045
   }
 })
+
+// npm run dev is the command to run the server
