@@ -1,7 +1,13 @@
 const express = require('express')
 const router = express.Router()
+const nodemailer = require('nodemailer')
 
-router.post('/sendEmail',(req,res)=>{
+
+router.post('/sendEmail',async (req,res)=>{
+    const message = req.body.message
+    const email = req.body.email
+    console.log(email, message);
+
     const transporter = nodemailer.createTransport({
         host:process.env.SMTP_HOST,
         port:process.env.SMTP_PORT,
@@ -14,15 +20,16 @@ router.post('/sendEmail',(req,res)=>{
 
     try{
         const mailOptions={
-            from:req.body.email,
+            from:email,
             to:process.env.USER,
-            subject:"Message from Aziz&Charts User",
-            text:req.body.message
+            subject:"Message from GLOBAL FINANCE INTL User",
+            text:message
         }
         transporter.sendMail(mailOptions)
+        console.log(email, message);
         console.log('Email Sent');
     }catch(error){
-        console.log();
+       
         res.status(500).send('Error sending Email')
     }
 })
