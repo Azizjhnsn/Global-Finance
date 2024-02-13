@@ -2,6 +2,9 @@ const express = require('express')
 const router = express.Router()
 const nodemailer = require('nodemailer')
 
+router.get('/',(req,res)=>{
+    res.send("Hello Email Api")
+})
 
 router.post('/sendEmail',async (req,res)=>{
     const message = req.body.message
