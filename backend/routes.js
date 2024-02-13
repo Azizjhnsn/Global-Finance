@@ -35,7 +35,6 @@ router.post('/sendEmail',async (req,res)=>{
        
         res.status(500).send('Error sending Email')
     }
-    res.send('Email sender')
 })
 
 module.exports= router
