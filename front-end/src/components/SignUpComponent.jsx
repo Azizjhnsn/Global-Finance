@@ -13,7 +13,7 @@ function SignUpComponent() {
 
         // Sending data to express js endpoint
         try{
-            const response = await fetch('https://globalfinanceintl.onrender.com', {
+            const response = await fetch('https://globalfinanceintl.onrender.com/sendEmail', {
                 method: 'POST',
                 headers: {
                     "Content-Type": "application/json",
@@ -38,7 +38,7 @@ function SignUpComponent() {
                         <i className="far fa-paper-plane fa-2x mb-2 text-white"></i>
                         <h2 className="text-white mb-5">Discutons de la façon dont nous pouvons vous aider à améliorer votre entreprise et votre condition de vie!</h2>
 
-                        <form className="form-signup" id="contactForm"  action='https://globalfinanceintl.onrender.com' method='post' onSubmit={handleFormSubmit}>
+                        <form className="form-signup" id="contactForm"  action='https://globalfinanceintl.onrender.com/sendEmail' method='post' onSubmit={handleFormSubmit}>
                             {/* <!-- Email address input--> */}
                             <div className="row input-group-newsletter">
                                 <div className="col"><input className="form-control" id="email" type="email" placeholder="Entrez un adresse mail..." data-sb-validations="required,email" name="email" /></div> 
