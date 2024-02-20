@@ -1,10 +1,10 @@
-import NavbarComponent from "./components/navbarComponent"
-import SectionOne from "./components/sectionOne"
-import SectionTwo from "./components/sectionTwo"
-import SectionThree from "./components/sectionThree"
+import NavbarComponent from "./components/NavbarComponent"
+import SectionOne from "./components/SectionOne"
+import SectionTwo from "./components/SectionTwo"
+import SectionThree from "./components/SectionThree"
 import SignUpComponent from "./components/SignUpComponent"
-import ContactComponent from "./components/contactComponent"
-import FooterComponent from "./components/footerComponent"
+import ContactComponent from "./components/ContactComponent"
+import FooterComponent from "./components/FooterComponent"
 
 
 
