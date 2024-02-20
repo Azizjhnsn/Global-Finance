@@ -1,5 +1,4 @@
 import NavbarComponent from "./components/navbarComponent"
-// import Navigation from "./components/Navigtion"
 import SectionOne from "./components/sectionOne"
 import SectionTwo from "./components/sectionTwo"
 import SectionThree from "./components/sectionThree"
